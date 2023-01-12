@@ -4,10 +4,11 @@ import { Link } from "react-router-dom"
 // import { click } from "@testing-library/user-event/dist/click"
 import { Button } from "./Button";
 import './Navbar.css';
+import ComingSoon from "./ComingSoon";
 function Navbar() {
   const[click,setclick]=useState(false);
   const [button,setButton]=useState(true);
-  // const handleClick = () => setclick(!click);
+  const handleClick = () => setclick(!click);
   const closeMobileMenu = () => setclick(false)
   const showButton = () => {
     if(window.innerWidth <= 960){
@@ -25,7 +26,7 @@ function Navbar() {
                 <Link to="/" className="navbar-logo">
                   TechSpark
                 </Link>
-                <div className="menu-icon">
+                <div className="menu-icon" onClick={handleClick}>
                   <i className={click? 'fas fa-times': 'fas fa-bars'}/>
                 </div>
                 <ul className={click? 'nav-menu active': 'nav-menu'}>
@@ -50,9 +51,11 @@ function Navbar() {
                     </Link>
                   </li>
                 </ul>
-                {button && <Button buttonStyle='btn--outline'>Sign UP</Button>}
+                {/* {button && <Button buttonStyle='btn--outline'>Sign UP</Button>} */}
             </div>
+           
         </nav>
+        <ComingSoon/>
     </>
   )
 }
