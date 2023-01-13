@@ -1,10 +1,10 @@
 import { useState } from "react"
 import React from 'react'
 import { Link } from "react-router-dom"
+import logo from "../TS_images/logo.png";
 // import { click } from "@testing-library/user-event/dist/click"
 import { Button } from "./Button";
 import './Navbar.css';
-import ComingSoon from "./ComingSoon";
 function Navbar() {
   const[click,setclick]=useState(false);
   const [button,setButton]=useState(true);
@@ -24,7 +24,7 @@ function Navbar() {
         <nav className="navbar">
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo">
-                  TechSpark
+                  <img src={logo}></img>
                 </Link>
                 <div className="menu-icon" onClick={handleClick}>
                   <i className={click? 'fas fa-times': 'fas fa-bars'}/>
@@ -55,7 +55,7 @@ function Navbar() {
             </div>
            
         </nav>
-        <ComingSoon/>
+
     </>
   )
 }

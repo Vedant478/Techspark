@@ -7,10 +7,7 @@ function ComingSoon() {
   return (
     <>
     <div className='back-image'>
-       <img src={backimg} alt=""/>
-       {/* <div className='year-image'>
-            <img src={year} />
-       </div> */}
+       
     </div>
    
 
