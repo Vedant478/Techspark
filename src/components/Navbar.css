@@ -3,9 +3,10 @@
   margin: 0;
   padding: 0;
 }
+
 .navbar {
     /* background: #0005; */
-    opacity:0.5 ;
+    opacity:0.9 ;
     position: absolute;
     /* height: 80px; */
     /* display: flex; */
