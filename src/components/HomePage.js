@@ -1,14 +1,21 @@
 import React from "react";
-import home from "../assets/TS_images/BG.jpg";
+import home from "../assets/TS_videos/gg.mp4";
 import "./HomePage.css";
 
+
+
 function HomePage() {
-  return (
-    <>
-      <div>
+   
+    return(
+      <>
+        <div>
         <div className="home-main">
-          <img src={home}></img>
+          <video autoPlay loop muted>
+          <source src={home} type="video/mp4" />
+          Your browser is noob
+          </video>
         </div>
+        
         <div className="home-text">
           <div className="me-relative">
             <h1>Tech Spark</h1>
@@ -16,11 +23,10 @@ function HomePage() {
           </div>
         </div>
         <div className="coming-soon">
-          <h2>Coming soon</h2>
+          <h2>Coming soon...</h2>
         </div>
       </div>
-    </>
-  );
-}
-
+      </>
+    )
+  };
 export default HomePage;
