@@ -4,8 +4,9 @@ import "./HomePage.css";
 
 
 
+
 function HomePage() {
-   
+  
     return(
       <>
         <div>
@@ -15,7 +16,6 @@ function HomePage() {
           Your browser is noob
           </video>
         </div>
-        
         <div className="home-text">
           <div className="me-relative">
             <h1>Tech Spark</h1>
