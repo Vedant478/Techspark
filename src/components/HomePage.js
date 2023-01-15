@@ -1,5 +1,5 @@
 import React from "react";
-import home from "../assets/TS_videos/gg.mp4";
+import home from "../assets/TS_videos/Fixed.mp4";
 import "./HomePage.css";
 
 
@@ -11,7 +11,7 @@ function HomePage() {
       <>
         <div>
         <div className="home-main">
-          <video autoPlay loop muted>
+          <video autoPlay loop muted playsInline>
           <source src={home} type="video/mp4" />
           Your browser is noob
           </video>
