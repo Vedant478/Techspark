@@ -1,7 +1,8 @@
 import React from "react";
 import home from "../assets/TS_videos/Fixed.mp4";
 import "./HomePage.css";
-
+import "./Navbar.js"
+import Navbar from "./Navbar.js";
 
 
 
@@ -9,7 +10,11 @@ function HomePage() {
   
     return(
       <>
+        
         <div>
+        <div>
+          <Navbar/>
+        </div>
         <div className="home-main">
           <video autoPlay loop muted playsInline>
           <source src={home} type="video/mp4" />
@@ -22,9 +27,7 @@ function HomePage() {
             <h2>2023</h2>
           </div>
         </div>
-        <div className="coming-soon">
-          <h2>Coming soon...</h2>
-        </div>
+       
       </div>
       </>
     )

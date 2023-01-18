@@ -32,35 +32,45 @@ function Navbar() {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                Home
+              <Link to="/aboutus" className="nav-links" onClick={closeMobileMenu}>
+                About us 
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                to="/events"
+                to="/coreteam"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
+                Core Team
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/website"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Website team
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/partners" className="nav-links" onClick={closeMobileMenu}>
+                Partners
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/events" className="nav-links" onClick={closeMobileMenu}>
                 Events
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                to="/contact"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Contact
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/team" className="nav-links" onClick={closeMobileMenu}>
-                Team
+              <Link to="/contactus" className="nav-links" onClick={closeMobileMenu}>
+                Contact us
               </Link>
             </li>
           </ul>
-          {/* {button && <Button buttonStyle='btn--outline'>Sign UP</Button>} */}
+         
         </div>
       </nav>
     </>
